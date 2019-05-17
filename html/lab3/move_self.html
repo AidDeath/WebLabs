@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Иокша Д.А.</title>
+	<LINK rel="stylesheet" href="../../css/lab1.css" type="text/css">
+    <LINK rel="stylesheet" href="../../css/lab3.css" type="text/css">
+       
+        <header>
+        <logo> 
+		      <img src="../../img/logo.png" alt="Логотип" usemap="#map" />
+		       <map name="map">
+                 <area alt="CSS" shape="poly"  coords="0,0, 185,0, 185,62"   href="../lab2/style_prop.html"/>
+                 <area alt="JS" shape="poly"   coords="0,0, 185,62, 185,122" href="./pre.html"/>
+                 <area alt="Crossword" shape="poly"   coords="0,0, 185,123, 93,123"  href="./pre.html"/>
+                 <area alt="Data" shape="poly" coords="0,0, 94,123,  0,123" href="./pre.html">
+                </map>
+	    </logo>
+		<h1 class = "name"> Иокша Дмитрий Александрович</h1>
+        <h1 class = "name name2">Иокша Дмитрий Александрович</h1>
+        <nav >
+              <!--  НЕ ЗАБЫТЬ ДОБАВИТЬ ССЫЛКИ НА СЛЕДУЮЩИЕ ЛАБЫ!!*/-->
+            <ul class="mainmenu">
+                <li><a href ="../lab1/pre.html">Форматирование</a></li>
+                <li><a href="../lab2/style_prop.html">CSS</a></li>
+                <li class = "active"><a href="../lab3/lab3_js.html">JS. События</a></li>
+                <li><a href="../lab4/lab4.html">Кроссворд </a></li>
+                <li><a href="../lab5/lab5.html">Формы</a></li>
+                <li><a href="../lab6/lab6_form1.html">JS Data</a></li>
+            </ul>          
+        </nav>
+	</header>
+  
+</head>
+
+<body bgcolor ="azure">
+       	 <nav >
+            <ul class = "submenu">
+                <li class = "active"><a href="./move_self.html">Движение</a></li>
+                <li><a href="./move.html">Движение управляемое</a></li>
+            </ul>
+        </nav>
+	
+    
+    <main>
+        <article>  
+
+                  <div class="move-box">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptatibus, quasi facilis. Quo quasi quaerat veritatis excepturi aperiam, non et facilis ullam, magnam earum! Laboriosam odio obcaecati ab dolore velit voluptate autem. Debitis voluptates commodi porro deleniti, magni nisi tempora dolore, harum neque ipsa similique veniam, ex vel vitae.
+                   
+                    <span class="name_float" id="name_float">Иокша Дмитрий</span>
+                    <script>
+                           var el=document.getElementById("name_float");
+                           var step = 1;
+                           x=10;y=460;
+                           el.style.left=x+"px";
+                           el.style.top=y+"px";
+                           setInterval(function() {
+
+                    
+                            if ((y>=20) && (step == 1)) {
+                                   y-=4;
+                               }
+
+                               
+                            if ( (step == 1) && (y < 20) ) {
+                                   step = 2;
+                               }
+                            if ((step == 2) && (y <= 480)){
+                                x += 2;
+                                y += 4;
+                            }   
+                               
+                            if   ((step == 2) && (y > 480)) {
+                                   
+                                      step = 3;
+                                   }
+                            if   ((step == 3) && (y >= 20)) {
+                                   
+                                x += 2;
+                                y -= 4;
+                                   }
+                               
+                            if   ((step == 3) && (y < 20)) {
+                                   
+                                      step = 4;
+                                   }
+                               
+                            if   ((step == 4) && (y <= 480)) {
+                                   
+                                      y += 4;
+                                   }
+                               
+                            if   ((step == 4) && (y >= 480)) {
+                                   
+                                  x = 10;
+                                  y = 460;
+                                  step = 1;
+                                
+                                   }
+                               
+                              
+                               el.style.left=x+"px";
+                               el.style.top=y+"px";
+                               
+                             
+                               }, 50)
+                      </script>
+              </div>
+       
+        </article>
+        <br>
+    </main>
+           
+       	 <nav >
+            <ul class = "submenu">
+                <li class = "active"><a href="./move_self.html">Движение</a></li>
+                <li><a href="./move.html">Движение управляемое</a></li>
+            </ul>
+        </nav>
+	
+
+		<footer> 
+            <span>Иокша Дмитрий гр.ПО-21 <sup>&#169;</sup> </span>
+            <span><a href="mailto:aiddeath@gmail.com"> E-mail: aiddeath@gmail.com</a></span> 
+            
+        </footer >
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Иокша Д.А.</title>
+	<LINK rel="stylesheet" href="../../css/lab1.css" type="text/css">
+    <LINK rel="stylesheet" href="../../css/lab5.css" type="text/css">
+    <script src="../../scripts/lab5.js"></script>
+        <header>
+        <logo> 
+		      <img src="../../img/logo.png" alt="Логотип" usemap="#map" />
+		       <map name="map">
+                 <area alt="CSS" shape="poly"  coords="0,0, 185,0, 185,62"   href="../lab2/style_prop.html"/>
+                 <area alt="JS" shape="poly"   coords="0,0, 185,62, 185,122" href="./pre.html"/>
+                 <area alt="Crossword" shape="poly"   coords="0,0, 185,123, 93,123"  href="./pre.html"/>
+                 <area alt="Data" shape="poly" coords="0,0, 94,123,  0,123" href="../lab6/data.html">
+                </map>
+	    </logo>
+		<h1 class = "name"> Иокша Дмитрий Александрович</h1>
+        <h1 class = "name name2">Иокша Дмитрий Александрович</h1>
+        <nav >
+              <!--  НЕ ЗАБЫТЬ ДОБАВИТЬ ССЫЛКИ НА СЛЕДУЮЩИЕ ЛАБЫ!!*/-->
+            <ul class="mainmenu">
+                <li><a href ="../lab1/pre.html">Форматирование</a></li>
+                <li><a href="../lab2/style_prop.html">CSS</a></li>
+                <li><a href="../lab3/lab3_js.html">JS. События</a></li>
+                <li><a href="../lab4/lab4.html">Кроссворд </a></li>
+                <li class = "active"><a href="../lab5/lab5.html">Формы</a></li>
+                <li><a href=../lab6/data.html>JS Data</a></li>
+            </ul>          
+        </nav>
+	</header>
+  
+</head>
+
+<body bgcolor ="azure">
+
+	
+    
+    <main>
+        <article>  
+<!--            -->
+       
+        <form  class="form-style-1" id="mainForm" autocomplete="off"   onsubmit="return add();">
+                    <fieldset>
+                        <legend>
+                                Наличие лекарств в аптеках 
+                        </legend>
+                        
+                        <p><label for="store_name">Название аптеки<span class="required">*</span></label> <input type="text" id="store_name"  autofocus required></p>
+                                               
+                         <p><label for="address">Адрес<span class="required">*</span></label> 
+                        <input type="text" id="address" required></p>
+                        
+
+                        
+                         <p><label for="phone">Телефон</label><input type="text" id="phone" placeholder="Формат: +375-29-1234567" pattern="\+\d{3}-\d{2}-\d{7}"></p>
+                         
+                         <p><label for="drug">Препарат<span class="required">*</span></label><input type="text" id="drug" required></p>
+                         
+                        <p><label for="drug_type">Тип препарата</label><select id="drug_type">
+                        <option>
+                                Уколы для иньекций
+                         </option>
+                         <option>
+                                Таблетки
+                         </option>
+                         <option>
+                                Порошок
+                         </option>
+                         <option>
+                                Капли
+                         </option>
+                        </select></p>
+
+                        
+                        <p><label for="price">Цена &#128<span class="required">*</span></label>
+                        <input type="number" id ="price" required value="100"> </p>
+                        
+                        <p><label for="count">Количество упаковок</label>  
+                               <input type="range" name="count" min="1" max="101" step="1" value="1" onchange="updateCount(this.value);">
+                        <span id="drug_count" value =1>1</span>
+                        </p>                        
+                        
+                        <p><label for="dose">Дозировка</label> 
+                           <input type="radio" name="dose" value="Взрослая" checked>Взрослая
+                            <input type="radio" name="dose" value="Детская">Детская
+                            <br/>
+                        </p> 
+                        
+                        <p><label for="receipt">Рецептурный отпуск</label>
+                        <input type="checkbox" name = "receipt">
+                        </p>
+                        
+                        <p><label for="expire">Годен до <span class="required">*</span> </label>
+                        <input type="date" name ="date" required></p> 
+                        
+                        <p><label for="email">Почта</label>
+                        <input type="email" name ="email" placeholder="example@domain.com">
+                        </p>                      
+                        
+                        <p><label for="url">Ссылка на инструкцию</label>
+                        <input type="url" name = "url"></p>
+                       
+                        
+                        
+                </fieldset>
+                        <p><input type="submit" value="Отправить"></p>
+                        </form>
+                        
+
+                        <table border="2" id="table">
+                            <thead>
+                                <th>Аптека</th>
+                                <th>Адрес</th>
+                                <th>Телефон</th>
+                                <th>Название</th>
+                                <th>Вид</th>
+                                <th>Цена, &#128</th>
+                                <th>Кол-во</th>
+                                <th>Доза</th>
+                                <th>Рецепт</th>
+                                <th>e-mail</th>
+                                <th>Инстр</th>
+                            </thead>
+                        </table>
+        </article>
+        <br>
+    </main>
+<br>           
+		<footer> 
+            <span>Иокша Дмитрий гр.ПО-21 <sup>&#169;</sup> </span>
+            <span><a href="mailto:aiddeath@gmail.com"> E-mail: aiddeath@gmail.com</a></span> 
+            
+        </footer >
+</body>
+
+</html>
