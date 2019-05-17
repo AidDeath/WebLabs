@@ -42,12 +42,12 @@
         <article>  
 <!--            -->
        
-        <form  class="form-style-1" id="mainForm" autocomplete="off"   onsubmit="return add();">
+        <form  class="form-style-1" id="mainForm" autocomplete="off"   onsubmit="return add();" >
                     <fieldset>
                         <legend>
                                 Наличие лекарств в аптеках 
                         </legend>
-                        
+                        <div style = "column-count: 3">
                         <p><label for="store_name">Название аптеки<span class="required">*</span></label> <input type="text" id="store_name"  autofocus required></p>
                                                
                          <p><label for="address">Адрес<span class="required">*</span></label> 
@@ -103,7 +103,7 @@
                         <p><label for="url">Ссылка на инструкцию</label>
                         <input type="url" name = "url"></p>
                        
-                        
+                        </div>
                         
                 </fieldset>
                         <p><input type="submit" value="Отправить"></p>

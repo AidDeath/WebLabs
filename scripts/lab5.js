@@ -23,8 +23,9 @@ function add() {
     +"<td>"+"<a onclick='DeleteRow(this);'>Удалить</a>"+"</td>"
     + "</tr>");
     
-  elems.store_name.value="";
-  elems.address.value="";
+//  elems.store_name.value="";
+ // elems.address.value="";
+   elems.drug.value = "";
   return false;
 }
 
